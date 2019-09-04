@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9iw-Ui-H8C">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Kf2-DY-RpS">
+            <objects>
+                <tableViewController id="9iw-Ui-H8C" customClass="ViewController" customModule="FoldingCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6RU-3k-4XC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoldingCell" rowHeight="610" id="Zd1-wI-ZQs" customClass="DemoCell" customModule="FoldingCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="610"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zd1-wI-ZQs" id="mr3-oW-DRK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sml-rT-BIZ" customClass="RotatedView" customModule="FoldingCell" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="8" width="398" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czq-Tu-pRj">
+                                                    <rect key="frame" x="20" y="25" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="47u-CD-wTe"/>
+                                                        <constraint firstAttribute="width" constant="50" id="VKX-6a-7D2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="43"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.050980392159999999" green="0.28627450980000002" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="czq-Tu-pRj" firstAttribute="leading" secondItem="sml-rT-BIZ" secondAttribute="leading" constant="20" id="8i2-Py-aEx"/>
+                                                <constraint firstItem="czq-Tu-pRj" firstAttribute="centerY" secondItem="sml-rT-BIZ" secondAttribute="centerY" id="DfR-tC-7nO"/>
+                                                <constraint firstAttribute="height" constant="100" id="HMa-cf-aru"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmZ-Ym-5Kb">
+                                            <rect key="frame" x="8" y="116" width="398" height="300"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suj-Yb-OPc">
+                                                    <rect key="frame" x="20" y="242" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="I0o-Kz-udO"/>
+                                                        <constraint firstAttribute="height" constant="50" id="W9W-lC-Dwn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="43"/>
+                                                    <color key="textColor" red="0.050980392159999999" green="0.28627450980000002" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pedro-lastra-127540-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="fb9-Sp-k9f">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="300"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="suj-Yb-OPc" secondAttribute="bottom" constant="8" id="GYK-aB-GQl"/>
+                                                <constraint firstItem="suj-Yb-OPc" firstAttribute="leading" secondItem="FmZ-Ym-5Kb" secondAttribute="leading" constant="20" id="hq7-nW-BYX"/>
+                                                <constraint firstAttribute="height" constant="300" id="lEs-A7-UQ3"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTS-qS-15Q">
+                                            <rect key="frame" x="8" y="424" width="398" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.91516649719999998" green="0.6632679105" blue="0.26654496789999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sml-rT-BIZ" firstAttribute="top" secondItem="mr3-oW-DRK" secondAttribute="top" constant="8" id="4e1-li-DKm"/>
+                                        <constraint firstAttribute="trailing" secondItem="FmZ-Ym-5Kb" secondAttribute="trailing" constant="8" id="8G7-OB-MHS"/>
+                                        <constraint firstItem="sml-rT-BIZ" firstAttribute="leading" secondItem="mr3-oW-DRK" secondAttribute="leading" constant="8" id="Mqv-qg-BQK"/>
+                                        <constraint firstAttribute="trailing" secondItem="sml-rT-BIZ" secondAttribute="trailing" constant="8" id="QdT-Ob-jWJ"/>
+                                        <constraint firstItem="FmZ-Ym-5Kb" firstAttribute="top" secondItem="mr3-oW-DRK" secondAttribute="top" constant="116" id="l4p-Q8-jSs"/>
+                                        <constraint firstItem="FmZ-Ym-5Kb" firstAttribute="leading" secondItem="mr3-oW-DRK" secondAttribute="leading" constant="8" id="mhh-h4-sDJ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="backgroundView" destination="pTS-qS-15Q" id="wTo-I4-JUi"/>
+                                    <outlet property="closeNumberLabel" destination="czq-Tu-pRj" id="M7J-I5-Zvr"/>
+                                    <outlet property="containerView" destination="FmZ-Ym-5Kb" id="8sV-GL-l8h"/>
+                                    <outlet property="containerViewTop" destination="l4p-Q8-jSs" id="28l-Cg-qsf"/>
+                                    <outlet property="foregroundView" destination="sml-rT-BIZ" id="EH5-DT-8Me"/>
+                                    <outlet property="foregroundViewTop" destination="4e1-li-DKm" id="LMm-Kw-Shh"/>
+                                    <outlet property="openNumberLabel" destination="suj-Yb-OPc" id="hJT-zv-Aj3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9iw-Ui-H8C" id="7uk-kd-k9R"/>
+                            <outlet property="delegate" destination="9iw-Ui-H8C" id="GiC-JB-iA3"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDa-W5-khS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.82608695652175" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pedro-lastra-127540-unsplash" width="2690" height="1200"/>
+    </resources>
+</document>
